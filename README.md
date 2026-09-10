@@ -1,0 +1,1 @@
+Progression through Laurea Web development 1. Learning the front end development tools and workflows. HTML, CSS, JavaScript among others.

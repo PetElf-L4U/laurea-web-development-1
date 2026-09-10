@@ -1,0 +1,1 @@
+Workshop 1: Recap of the basics. Using of Git and Github, HTML and CSS.
