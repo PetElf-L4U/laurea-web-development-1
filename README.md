@@ -1,1 +1,0 @@
-Workshop 1 - Practicing the web development basics with Git, Github, HTML and CSS.
