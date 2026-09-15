@@ -29,7 +29,6 @@ img {
     border-bottom: 5px solid;
     border-color: maroon;
     border-style: dotted;
-
 }
 
 a {
@@ -39,4 +38,23 @@ a {
 a:hover {
     color: blue;
     text-decoration: none;
+}
+
+button {
+    color: white;
+    background-color: maroon;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 10px;
+}
+
+button:hover {
+    color: maroon;
+    background-color: coral;
+    transition-duration: 0.6s;
+}
+
+button:active {
+    background-color: red;
 }

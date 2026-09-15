@@ -1,37 +1,49 @@
-// STEP 1: Print text to the browser console is string ""
-console.log("Hello World");
-// STEP 2: Variables
+// WORKSHOP 02 - Javascript Basics
 
-// Store text values in variables
-const userName = "Petteri";
-const favoriteAnimal = "Cow";
-// Print the variables to the console
-console.log("My name is " + userName + ".");
-console.log("My favorite animal is " + favoriteAnimal + ".");
-// STEP 3: User interaction
+// EX1 - Developer Tools and Console
+    // Console print "Hello World!"
+    console.log("Hoi maailma!");
+    // Display a pop-up message "welcome to my website"
+    alert("Tervetuloa verkkosivulleni!");
+// EX2 - Variables
+    // Store text values in variables
+    const userName = "Petteri";
+    let age = 35;
+    const favoriteAnimal = "nauta";
+    // Print the variables to the console.
+    console.log("Nimeni on " + userName + " ja lempieläimeni on " + favoriteAnimal + ".");
 
-// Display a pop-up message
-alert("Welcome to my website.")
-// Ask the user for their name
-const visitorName = prompt("What is your name?");
-// Print the user's answer
-console.log("Welcome " + visitorName + "! I hope you enjoy your stay.");
-// Ask the user for their favorite animal
-const visitorFavoriteAnimal = prompt("What is your favorite animal?");
-// Create a sentence using both answers
-console.log("Hello, " + visitorName + "! Your favorite animal is " + visitorFavoriteAnimal + ".");
+// EX3 - User Input
+    // Ask the user for their name
+    const visitorName = prompt("Mikä sinun nimesi on?");
+    // Print the user's answer
+    console.log("Hei " + visitorName + "! Tervetuloa JavaScriptin pariin.");
 
-// ⭐⭐ BONUS Ask the user for their favorite animal.
-// If their favorite animal is "Blue Elephant", print: Great choice! That's my favorite animal too!
-const specialAnimal = "Blue Elephant";
-const bonusFavoriteAnimal = prompt("(Bonus) What is your favorite animal?");
-if (bonusFavoriteAnimal == specialAnimal) {
-    console.log("Great choice! That's my favorite animal too!");
+// EX 4 - Conditionals
+    // Ask the user their age and print the result to console, using if / else statement.
+    const visitorAge = prompt("Kuinka vanha olet?");
+    if (visitorAge >= 18){
+        console.log("Olet täysi-ikäinen.")
+        }
+    else {
+        console.log("Olet alle 18-vuotias.")
+        }
+    
+// EX 5 - Functions
+    // Create a fucntion called greetUser.
+    //The function should receive a name as parameter and print a greeting.
+    function greetUser(name) {
+        console.log("Heippa " + name + "!");
     }
-else{
-    console.log("Nice! Your favorite animal is " + bonusFavoriteAnimal + ".")
-    }
-// ⭐⭐ BONUS Otherwise, print: Nice! Your favorite animal is [animal]. Can you figure out how to do this using if / else?
+    greetUser(visitorName)
+    
+// EX 6 - Button - Connect JavaScript to the Page
+    //Add a heading and a button to your HTML page.
+    //When the button is clicked, use JavaScript to display a message.
+    const date = new Date();
 
-// const visitorFavoriteAnimal = prompt("What is your favorite animal?");
+    function myFunction() {
+       alert("Today is " + date.toDateString() + ".");
+    }
+    
 
