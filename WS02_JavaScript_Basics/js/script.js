@@ -45,5 +45,3 @@
     function myFunction() {
        alert("Today is " + date.toDateString() + ".");
     }
-    
-
