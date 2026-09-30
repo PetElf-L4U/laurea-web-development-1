@@ -5,6 +5,11 @@ const taskOneHeading = document.querySelector("#taskOneHeading");
 const changeHeadingButton = document.querySelector("#changeHeadingButton");
 const changeStyleButton = document.querySelector("#changeStyleButton");
 const changeTextButton = document.querySelector("#changeTextButton");
+const animalText = document.querySelector("#animalText");
+// Bonus nappulat
+const addTextButton = document.querySelector("#addTextButton");
+const changeBackgroundButton = document.querySelector("#changeBackgroundButton");
+
 
 // Muokataan otsikkoa, kun nappia painetaan.
 changeHeadingButton.addEventListener("click", function () {
@@ -18,7 +23,19 @@ changeStyleButton.addEventListener("click", function () {
 
 // Muokataan tekstiä, kun nappia painetaan.
 changeTextButton.addEventListener("click", function () {
+    animalText.textContent = "Elefanteilla on kärsä, jossa voi olla lähes 100 000 lihasta.";
+});
 
+// Bonus: Lisätään tekstiä eläintekstin loppuun poistamatta alkuperäistä.
+addTextButton.addEventListener("click", function () {
+    const alkuperainen = animalText.textContent;
+    animalText.textContent = alkuperainen + " Savanninnorsu-uros voi painaa jopa 7000 kiloa.";
+});
+
+// Bonus: Vaihdetaan sivun taustaväriä.
+changeBackgroundButton.addEventListener("click", function () {
+    const siteBackground = document.body;
+    siteBackground.style.backgroundColor = "grey";
 });
 
 // -------------------------------------------------- EXAMPLE 1 ANIMAL TABLE

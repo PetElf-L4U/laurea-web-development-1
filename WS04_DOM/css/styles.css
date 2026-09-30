@@ -100,7 +100,8 @@ code {
     border: 6px solid #31107a;
 }
 
-#animalImage,
+#animalImage, 
+#animalImageTitle,
 #animalContent img {
     display: block;
     width: 400px;
