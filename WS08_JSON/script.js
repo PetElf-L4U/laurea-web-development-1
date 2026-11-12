@@ -1,3 +1,4 @@
+/*
 // API Avaimen piilotus
 const API_KEY = process.env.OWAPI;
 if (API_KEY) {
@@ -7,10 +8,9 @@ if (API_KEY) {
 else {
     console.error("VIRHE: API-avainta ei löydy ympäristömuuttujista."); 
 } 
-
-
+*/
 // OpenWeather API-avain.
-const apiKey = API_KEY;
+const apiKey = "YOUR_API_KEY";
 // URL:n parametrit
 let city = "Helsinki"; 
 const units = "metric";
