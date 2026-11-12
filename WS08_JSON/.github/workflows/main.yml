@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     # TÄHÄN LISÄTÄÄN MÄÄRITYS:
     env:
-      OWAPI: ${{ secrets.OWAPI }} # Lataa avain secretsistä
+      OWAPI: ${{secrets.OWAPI}} # Lataa avain secretsistä
     steps:
     - name: Checkout koodi
       uses: actions/checkout@v4
